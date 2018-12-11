@@ -25,6 +25,6 @@ app.use('/api/v1/records', RecordRoute)
 app.use('/api/v1/actors', ActorRoute)
 
 const PORT = 12345
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`App listening on ${PORT}...`)
 })
