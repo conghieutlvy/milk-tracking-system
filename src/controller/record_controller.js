@@ -95,6 +95,7 @@ exports.editLayMau = async function (req, res) {
 
 exports.editChuanHoa = async function (req, res) {
   const {recordId, actorId} = req.params
+  console.log(req.body);
   console.log(`LOG[${Date(Date.now()).toString()}] Actor ${actorId}'s editing ChuanHoa on record ${recordId}...`)
   try {
     const actor = await ActorModel.findById(actorId)
@@ -112,6 +113,7 @@ exports.editChuanHoa = async function (req, res) {
 
 exports.editDongHoa = async function (req, res) {
   const {recordId, actorId} = req.params
+  console.log(req.body);
   console.log(`LOG[${Date(Date.now()).toString()}] Actor ${actorId}'s editing DongHoa on record ${recordId}...`)
   try {
     const actor = await ActorModel.findById(actorId)
@@ -129,6 +131,7 @@ exports.editDongHoa = async function (req, res) {
 
 exports.editThanhTrung = async function (req, res) {
   const {recordId, actorId} = req.params
+  console.log(req.body);
   console.log(`LOG[${Date(Date.now()).toString()}] Actor ${actorId}'s editing ThanhTrung on record ${recordId}...`)
   try {
     const actor = await ActorModel.findById(actorId)
@@ -146,6 +149,7 @@ exports.editThanhTrung = async function (req, res) {
 
 exports.editCoDac = async function (req, res) {
   const {recordId, actorId} = req.params
+  console.log(req.body);
   console.log(`LOG[${Date(Date.now()).toString()}] Actor ${actorId}'s editing CoDac on record ${recordId}...`)
   try {
     const actor = await ActorModel.findById(actorId)
