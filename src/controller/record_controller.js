@@ -77,6 +77,7 @@ exports.getById = async function(req, res) {
 
 exports.editLayMau = async function (req, res) {
   const {recordId, actorId} = req.params
+  console.log(req.body);
   console.log(`LOG[${Date.now()}] Actor ${actorId}'s editing LayMau on record ${recordId}...`)
   try {
     const actor = await ActorModel.findById(actorId)
